@@ -82,6 +82,7 @@ htmlSkeleton userGenerated title scripts =
       H.title (H.toHtml title)
       favicon
       H.link ! A.rel "stylesheet" ! A.href "/assets/style.css"
+      H.link ! A.rel "stylesheet" ! A.href "/assets/foundation.css"      
       when (not userGenerated) $
         do  googleAnalytics
             H.link ! A.rel "stylesheet" ! A.href "/highlight/styles/default.css"
